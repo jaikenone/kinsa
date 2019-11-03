@@ -1,0 +1,105 @@
+{
+    "host": {
+        "name": "localhost",
+        "port": 5432
+    },
+    "databases": [
+        {
+            "name": "database_one",
+            "tables": [
+                {
+                    "name": "events",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "UPDATE",
+                                "INSERT",
+                                "SELECT",
+                                "DELETE"
+                            ]
+                        },
+                        {
+                            "name": "bob",
+                            "rights": [
+                                "SELECT"
+                            ]
+                        },
+                        {
+                            "name": "sam",
+                            "rights": [
+                                "SELECT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "profiles",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "SELECT"
+                            ]
+                        },
+                        {
+                            "name": "bob",
+                            "rights": [
+                                "SELECT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "database_two",
+            "tables": [
+                {
+                    "name": "another",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "UPDATE",
+                                "INSERT",
+                                "SELECT",
+                                "DELETE"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "missing",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "UPDATE",
+                                "INSERT",
+                                "SELECT",
+                                "DELETE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "missing_database",
+            "tables": [
+                {
+                    "name": "missing",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

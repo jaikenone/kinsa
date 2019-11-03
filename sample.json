@@ -1,0 +1,27 @@
+{
+    "host": {
+        "name": "localhost",
+        "port": 5432
+    },
+    "databases": [
+        {
+            "name": "database_one",
+            "tables": [
+                {
+                    "name": "events",
+                    "users": [
+                        {
+                            "name": "abe",
+                            "rights": [
+                                "UPDATE",
+                                "INSERT",
+                                "SELECT",
+                                "DELETE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
